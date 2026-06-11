@@ -5,7 +5,7 @@ using namespace std;
 
 bool dfs( vector<vector<char>>& board, string &word, int i, int j, int k){
     if (k == word.size()){
-        return true; 
+        return true;  
     }
     
     int m = board.size();
@@ -24,7 +24,6 @@ bool dfs( vector<vector<char>>& board, string &word, int i, int j, int k){
           dfs(board, word, i, j-1, k+1) ;
 
     board[i][j] = temp;
-     
     return found;
           
 }
